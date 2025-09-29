@@ -43,4 +43,4 @@ def visualise(graph,hide=False,clusters=None,circular=False):
         G.add_edge(u,v,dir=dir,label=label)
         G.layout(prog="dot")
     display(Image(G.draw(format='png')))
-    return
+    return G
